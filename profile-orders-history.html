@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="images/favicon.png" rel="icon" />
+  <title>Biller</title>
+
+  <!-- Web Fonts
+============================================= -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet
+============================================= -->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div data-loader="dual-ring"></div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+============================================= -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================================= -->
+    <header id="header">
+      <div class="container">
+        <div class="header-row">
+          <div class="header-column justify-content-start">
+
+            <!-- Logo
+        ============================================= -->
+            <div class="logo me-2 me-lg-3"> <a href="index.html" class="d-flex"><img src="images/logo.png"
+                  alt="Biller" /></a> </div>
+            <!-- Logo end -->
+
+          </div>
+          <div class="header-column justify-content-end">
+
+            <!-- Primary Navigation
+        ============================================= -->
+
+            <!-- Primary Navigation end -->
+
+            <!-- Collapse Button
+    =============================== -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
+              <span></span> <span></span> <span></span> </button>
+            <div class="vr mx-2 h-25 my-auto"></div>
+            <!-- Login Signup
+    =============================== -->
+            <nav class="login-signup navbar navbar-expand">
+              <ul class="navbar-nav">
+                <li class="profile dropdown active"><a class="pe-0 dropdown-toggle" href="#" title="My Profile"><span
+                      class="d-none d-sm-inline-block">My Profile</span> <span class="user-icon ms-sm-2"><i
+                        class="fas fa-user"></i></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="text-center text-3 py-2">Hi, Johne Cary</li>
+                    <li class="dropdown-divider mx-n3"></li>
+                    <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i>Personal Information</a>
+                    </li>
+                    <li><a class="dropdown-item" href="profile-favourites.html"><i
+                          class="fas fa-bookmark"></i>Favourites</a></li>
+                    <li><a class="dropdown-item" href="profile-cards.html"><i class="fas fa-credit-card"></i>Credit or
+                        Debit Cards</a></li>
+                    <li><a class="dropdown-item" href="profile-orders-history.html"><i class="fas fa-history"></i>Orders
+                        History</a></li>
+                    <li class="dropdown-divider mx-n3"></li>
+                    <li><a class="dropdown-item" href="help.html"><i class="fas fa-life-ring"></i>Need Help?</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Content
+============================================= -->
+    <div id="content">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-3">
+            <!-- Nav Link
+          ============================================= -->
+            <ul class="nav nav-pills alternate flex-lg-column mb-3 mb-lg-0 sticky-top">
+              <li class="nav-item"><a class="nav-link" href="./"><span class="me-2"><i
+                      class="fa fa-tachometer"></i></span>DashBoard</a></li>
+              <li class="nav-item"><a class="nav-link" href="profile.html"><span class="me-2"><i
+                      class="fas fa-user"></i></span>Personal Information</a></li>
+              <li class="nav-item"><a class="nav-link" href="profile-favourites.html"><span class="me-2"><i
+                      class="fas fa-bookmark"></i></span>Favourites</a></li>
+              <li class="nav-item"><a class="nav-link active" href="profile-orders-history.html"><span class="me-2"><i
+                      class="fas fa-history"></i></span>Orders History</a></li>
+              <li class="nav-item"><a class="nav-link" href="profile-cards.html"><span class="me-2"><i
+                      class="fas fa-credit-card"></i></span>Credit or Debit Cards</a></li>
+            </ul>
+            <!-- Nav Link end -->
+          </div>
+          <div class="col-lg-9">
+            <div class="bg-white shadow-md rounded p-4">
+              <!-- Orders History
+          ============================================= -->
+              <h4 class="mb-4">Orders History</h4>
+              <hr class="mx-n4">
+              <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                <li class="nav-item"> <a class="nav-link active" id="first-tab" data-bs-toggle="tab" href="#first"
+                    role="tab" aria-controls="first" aria-selected="true">All</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="second-tab" data-bs-toggle="tab" href="#second" role="tab"
+                    aria-controls="second" aria-selected="false">Recharge & Bill Payment</a> </li>
+                <li class="nav-item"> <a class="nav-link" id="third-tab" data-bs-toggle="tab" href="#third" role="tab"
+                    aria-controls="third" aria-selected="false">Booking</a> </li>
+              </ul>
+              <div class="tab-content my-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                  <div class="table-responsive-md">
+                    <table class="table table-hover border">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Order ID</th>
+                          <th class="text-center">Status</th>
+                          <th class="text-end">Amount</th>
+                          <th class="text-center"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align-middle">06/06/2018</td>
+                          <td class="align-middle"><img src="images/brands/operator/vodafone.jpg"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Recharge of
+                              Vodafone Mobile 9696969696</span></td>
+                          <td class="align-middle">5286977475</td>
+                          <td class="align-middle text-center"><i class="fas fa-check-circle text-4 text-success"
+                              data-bs-toggle="tooltip" title="Your order is Successful"></i></td>
+                          <td class="align-middle text-end">$150</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Repeat Order"><i class="fas fa-redo-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">02/06/2018</td>
+                          <td class="align-middle"><img src="images/brands/flights/indigo.png"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Booking of
+                              Delhi to Sydney flight</span></td>
+                          <td class="align-middle">5136907172</td>
+                          <td class="align-middle text-center"><i class="fas fa-check-circle text-4 text-success"
+                              data-bs-toggle="tooltip" title="Your order is Successful"></i></td>
+                          <td class="align-middle text-end">$980</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Repeat Order"><i class="fas fa-redo-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">31/05/2018</td>
+                          <td class="align-middle"><img src="images/brands/operator/vodafone.jpg"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Bill Payment
+                              of Vodafone Mobile 9898989898</span></td>
+                          <td class="align-middle">1072317951</td>
+                          <td class="align-middle text-center"><i class="fas fa-ellipsis-h text-4 text-info"
+                              data-bs-toggle="tooltip" title="Your order is in Progress"></i></td>
+                          <td class="align-middle text-end">$99</td>
+                          <td class="align-middle text-center"></td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">25/05/2018</td>
+                          <td>
+                            <div class="d-lg-flex align-items-center"> <span
+                                class="img-thumbnail d-inline-flex text-8 p-2 me-2"><i class="fas fa-bus"></i></span>
+                              <span class="text-1 d-inline-flex">Booking of Mumbai to Surat Bus</span> </div>
+                          </td>
+                          <td class="align-middle">4103520927</td>
+                          <td class="align-middle text-center"><i class="fas fa-check-circle text-4 text-success"
+                              data-bs-toggle="tooltip" title="Your order is Successful"></i></td>
+                          <td class="align-middle text-end">$450</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Repeat Order"><i class="fas fa-redo-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">21/05/2018</td>
+                          <td class="align-middle"><img src="images/brands/operator/vodafone.jpg"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Recharge of
+                              Vodafone Mobile 9898989898</span></td>
+                          <td class="align-middle">3079317986</td>
+                          <td class="align-middle text-center"><i class="fas fa-times-circle text-4 text-danger"
+                              data-bs-toggle="tooltip" title="Your order is Failed"></i></td>
+                          <td class="align-middle text-end">$280</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Retry Order"><i class="fas fa-redo-alt "></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="text-center pt-3"><a href="#" class="btn btn-outline-primary shadow-none">View More</a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                  <div class="table-responsive-md">
+                    <table class="table table-hover border">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Order ID</th>
+                          <th class="text-center">Status</th>
+                          <th class="text-end">Amount</th>
+                          <th class="text-center"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align-middle">06/06/2018</td>
+                          <td class="align-middle"><img src="images/brands/operator/vodafone.jpg"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Recharge of
+                              Vodafone Mobile 9696969696</span></td>
+                          <td class="align-middle">5286977475</td>
+                          <td class="align-middle text-center"><i class="fas fa-check-circle text-4 text-success"
+                              data-bs-toggle="tooltip" title="Your order is Successful"></i></td>
+                          <td class="align-middle text-end">$150</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Repeat Order"><i class="fas fa-redo-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">31/05/2018</td>
+                          <td class="align-middle"><img src="images/brands/operator/vodafone.jpg"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Recharge of
+                              Vodafone Mobile 9898989898</span></td>
+                          <td class="align-middle">1072317951</td>
+                          <td class="align-middle text-center"><i class="fas fa-ellipsis-h text-4 text-info"
+                              data-bs-toggle="tooltip" title="Your order is in Progress"></i></td>
+                          <td class="align-middle text-end">$99</td>
+                          <td class="align-middle text-center"></td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">21/05/2018</td>
+                          <td class="align-middle"><img src="images/brands/operator/vodafone.jpg"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Recharge of
+                              Vodafone Mobile 9898989898</span></td>
+                          <td class="align-middle">3079317986</td>
+                          <td class="align-middle text-center"><i class="fas fa-times-circle text-4 text-danger"
+                              data-bs-toggle="tooltip" title="Your order is Failed"></i></td>
+                          <td class="align-middle text-end">$280</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Retry Order"><i class="fas fa-redo-alt "></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                  <div class="table-responsive-md">
+                    <table class="table table-hover border">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Order ID</th>
+                          <th class="text-center">Status</th>
+                          <th class="text-end">Amount</th>
+                          <th class="text-center"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align-middle">02/06/2018</td>
+                          <td class="align-middle"><img src="images/brands/flights/indigo.png"
+                              class="img-thumbnail d-inline-flex me-1"> <span class="text-1 d-inline-flex">Booking of
+                              Delhi to Sydney flight</span></td>
+                          <td class="align-middle">5136907172</td>
+                          <td class="align-middle text-center"><i class="fas fa-check-circle text-4 text-success"
+                              data-bs-toggle="tooltip" title="Your order is Successful"></i></td>
+                          <td class="align-middle text-end">$980</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Repeat Order"><i class="fas fa-redo-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">25/05/2018</td>
+                          <td>
+                            <div class="d-lg-flex align-items-center"> <span
+                                class="img-thumbnail d-inline-flex text-8 p-2 me-2"><i class="fas fa-bus"></i></span>
+                              <span class="text-1 d-inline-flex">Booking of Mumbai to Surat Bus</span> </div>
+                          </td>
+                          <td class="align-middle">4103520927</td>
+                          <td class="align-middle text-center"><i class="fas fa-check-circle text-4 text-success"
+                              data-bs-toggle="tooltip" title="Your order is Successful"></i></td>
+                          <td class="align-middle text-end">$450</td>
+                          <td class="align-middle text-center"><a href="#" data-bs-toggle="tooltip"
+                              title="Repeat Order"><i class="fas fa-redo-alt"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- Orders History end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content end -->
+
+      <!-- Footer
+  ============================================= -->
+      <footer id="footer">
+
+        <div class="container">
+          <div class="footer-copyright">
+
+            <p class="copyright-text">Copyright © 2022 <a href="#">Biller</a>. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end -->
+
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a id="back-to-top" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+        class="fa fa-chevron-up"></i></a>
+
+    <!-- Script -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
