@@ -580,41 +580,6 @@
       class="fa fa-chevron-up"></i></a>
 
   <!-- Script -->
-  <script>
-    const navBarToggler = document.querySelector(".navbar-toggler");
-    const asideBar = document.getElementById("aside");
-
-    let asideOffSetTop = asideBar.offsetTop
-
-    // Fixes the navigations to the top when the screen has been scrolled down
-    window.addEventListener("scroll", () => {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop
-      if (scrollTop > asideOffSetTop) {
-        asideBar.style.position = "fixed"
-        asideBar.style.top = "0"
-      } else {
-        asideBar.style.position = "absolute"
-        asideBar.style.top = "70px"
-      }
-    })
-
-    // Slides the nvigation in and out on the click of the menu
-    navBarToggler.addEventListener("click", () => {
-      if (navBarToggler.classList.contains("open")) {
-        asideBar.style.transform = "translateX(-250px)";
-      } else {
-        asideBar.style.transform = "translateX(0)";
-      }
-    });
-
-    // closes the navigation when the screen outside the navigation is clicked
-    document.addEventListener("click", (event) => {
-      if (window.innerWidth < 992 && !asideBar.contains(event.target) && event.target !== navBarToggler) {
-        asideBar.style.transform = "translateX(-250px)"
-        navBarToggler.classList.remove("open")
-      }
-    })
-  </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
