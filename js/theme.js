@@ -362,12 +362,14 @@ function setupNavigation() {
   // Fixes the navigation to the top when the screen has been scrolled down
   window.addEventListener("scroll", () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > asideOffSetTop) {
-      asideBar.style.position = "fixed";
-      asideBar.style.top = "0";
-    } else {
-      asideBar.style.position = "absolute";
-      asideBar.style.top = "70px";
+    if (window.innerWidth < 992) {
+      if (scrollTop > asideOffSetTop) {
+        asideBar.style.position = "fixed";
+        asideBar.style.top = "0";
+      } else {
+        asideBar.style.position = "absolute";
+        asideBar.style.top = "70px";
+      }
     }
   });
 
